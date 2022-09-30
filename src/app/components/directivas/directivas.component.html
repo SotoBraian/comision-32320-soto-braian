@@ -1,0 +1,12 @@
+<app-directivas></app-directivas>
+<p> {{ListaAlumnos}}</p>
+<ol>
+    <div *ngFor="let persona of ListaAlumnos">
+        <li *ngIf="persona.edad > 18">
+            <div>{{persona.nombre}}={{persona.edad}}</div>
+        </li>
+    </div>
+</ol>
+<p>{{fecha | date: `dd/mm/yy}}</p>
+
+
