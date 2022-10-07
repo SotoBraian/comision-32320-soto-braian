@@ -2,14 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { DirectivasComponent } from './components/directivas/directivas.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { PadreComponent } from './components/padre/padre.component';
+import { TablaComponent } from './components/tabla/tabla.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    DirectivasComponent,
+    FormularioComponent,
+    PadreComponent,
+    TablaComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
