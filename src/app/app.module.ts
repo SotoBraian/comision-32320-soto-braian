@@ -2,21 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { FormularioComponent } from './components/formulario/formulario.component';
-import { PadreComponent } from './components/padre/padre.component';
-import { TablaComponent } from './components/tabla/tabla.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PersonasComponent } from './carpeta-personas/personas/personas.component';
+import { MaterialModule } from './material/material/material.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent,
-    PadreComponent,
-    TablaComponent,
+    PersonasComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
+  ],
+  exports:[
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
